@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .header {
+            height: 80px;
+            width: 100%;
+            background-color: #527885;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menus {
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .menus:hover {
+            color: #a5d5ff;
+        }
+
+        #touch {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #touch:hover {
+            background-color: #333;
+        }
+
+        /* Bio Section Styles */
+        .bio {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .bio .left {
+            max-width: 50%;
+        }
+
+        .bio .left div {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .bio .left p {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .bio .mypic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 10px 20px 20px rgba(0,0,0,0.3);
+            object-fit: cover;
+        }
+
+        /* Skills Section Styles */
+        #skills {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #skills h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills ul li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Certificate Section Styles */
+        .certificate-wrapper {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        #certificate h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .certificates {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .certificate {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .certificate h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .certificate a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .certificate a:hover {
+            text-decoration: underline;
+        }
+
+        /* Project Section Styles */
+        #projects {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #projects h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img class="logo" src="./image1/logo.jpg" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li class="menus">Home</li>
+            <li class="menus">About</li>
+            <li id="touch" class="menus">Get in touch</li>
+        </ul>
+    </header>
+
+    <section class="bio">
+        <div class="left">
+            <div>Hi, my name is <span style="color: purple;">Seema</span> and I'm a Software Engineer</div>
+            <p>"with a degree from RTMNU University, where I honed my skills in various programming languages like advanced python,html,css,javascript and problem-solving techniques. My academic background has provided me with a deep understanding of software design principles, algorithms, and system architecture. I am passionate about leveraging technology to create impactful solutions, and I thrive in environments that challenge me to learn and grow continuously. Whether it's developing efficient code, collaborating in teams, or exploring new technologies, I am driven by a desire to innovate and contribute meaningfully to every project I undertake. With a strong foundation in both theoretical knowledge and practical application, I am eager to bring my cloud computing certificate and python cource certificate  make a positive impact through my work."</p>
+        </div>
+        <div class="right">
+            <img class="mypic" src="./image1/mypic.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- Certificate Section -->
+    <div class="certificate-wrapper">
+        <section id="certificate">
+            <h1>Certificates</h1>
+            <div class="certificates">
+                <div class="certificate">
+                    <h3>Cloud Computing</h3>
+                    <a href="image1/NPTL.CC1.pdf" target="_blank">View Certificate</a>
+                </div>
+                <div class="certificate">
+                    <h3>Great Learning</h3>
+                    <a href="image1/greatlearning.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1: Recommendation of crop using live weather forecast for rainfall density</h3>
+                <p>Developed a responsive website using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/Seemavaidya123/mini-project-implementation-.git" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: SMS spam detection using machine learning</h3>
+                <p>Developed this project using machine learning.</p>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Portfolio</h3>
+                <p>Designed and developed a full-featured e-commerce website with a shopping cart and payment gateway integration.</p>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
